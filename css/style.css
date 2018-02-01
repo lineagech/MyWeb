@@ -2,6 +2,7 @@
 @import url("./animate.css");
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 .container {
     width: 970px;
     margin: 0 auto;
@@ -195,16 +196,17 @@ nav .col-nav h3 {
 }
 
 [id^="about_me"] .clear-img-wrapper {
-    border: 5px dashed pink;
+    border: 0px dashed pink;
     overflow: auto;
     width: 80%;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 
 [id^="about_me"] .clear-img-wrapper #right-img {
     float: right;
     clear: right;
     margin-right: 40px;
+    margin-top: 30px;
     width: 458px;
     height: 354px;
     border: 0px solid red;
@@ -213,6 +215,8 @@ nav .col-nav h3 {
 
 [id^="about_me"] .clear-img-wrapper #right-img img {
     display: block;
+    width: 100%;
+    height: auto;
     border-radius: 25px;
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
@@ -227,10 +231,27 @@ nav .col-nav h3 {
     transform: scale(1.2, 1.2);
 }
 
+[id^="about_me"] .clear-img-wrapper #left-img img {
+    display: block;
+    border-radius: 25px;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+[id^="about_me"] .clear-img-wrapper #left-img img:hover {
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
 [id^="about_me"] .clear-img-wrapper #left-img {
     float: left;
-    margin-right: 10px;
+    margin-right: 15px;
     margin-left: 50px;
+    margin-top: 30px;
     border-radius: 25px;
     width: 458px;
     height: 354px;
@@ -238,14 +259,9 @@ nav .col-nav h3 {
 
 [id^="about_me"] .clear-img-wrapper #left-img img {
     display: block;
-    width: 458px;
-    height: 285px;
+    width: 100%;
+    height: auto;
     border-radius: 25px;
-}
-
-[id^="about_me"] .clear-img-wrapper {
-    border: 1px dashed pink;
-    overflow: auto;
 }
 
 .fadeInUp [id^="about_me_left"] {
@@ -254,8 +270,8 @@ nav .col-nav h3 {
     padding: 5px;
     margin: 70px 30px;
     border: 0px solid purple;
-    font-family: cursive;
-    font-size: 20px;
+    font-family: Dancing Script;
+    font-size: 24px;
     color: rgb(32, 42, 41);
 }
 
@@ -271,5 +287,9 @@ nav .col-nav h3 {
     width: 50%;
     margin-top: 50px;
     margin-right: 30px;
-    border: 1px solid purple;
+    border: 0px solid purple;
+    font-size: 24px;
+    font-family: Dancing Script;
+    padding: 0px;
+    text-align: center;
 }
