@@ -242,15 +242,15 @@ nav .col-nav h3 {
 }
 
 [id^="about_me"] .clear-img-wrapper #left-img img:hover {
-    -ms-transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
 }
 
 [id^="about_me"] .clear-img-wrapper #left-img {
     float: left;
     margin-right: 15px;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 30px;
     border-radius: 25px;
     width: 458px;
