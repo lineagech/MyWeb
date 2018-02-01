@@ -1,0 +1,275 @@
+@import url("./navbar.css");
+@import url("./animate.css");
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    border: 0px solid red;
+}
+
+[class^='col-'] {
+    float: left;
+}
+
+.col-1 {
+    width: calc(100% * 1 / 12);
+}
+
+.col-2 {
+    width: calc(100% * 2 / 12);
+}
+
+.col-3 {
+    width: calc(100% * 3 / 12);
+}
+
+.col-4 {
+    width: calc(100% * 4 / 12);
+}
+
+.col-5 {
+    width: calc(100% * 5 / 12);
+}
+
+.col-6 {
+    width: calc(100% * 6 / 12);
+}
+
+.col-7 {
+    width: calc(100% * 7 / 12);
+}
+
+.col-8 {
+    width: calc(100% * 8 / 12);
+}
+
+.col-9 {
+    width: calc(100% * 9 / 12);
+}
+
+.col-10 {
+    width: calc(100% * 10 / 12);
+}
+
+.col-11 {
+    width: calc(100% * 11 / 12);
+}
+
+.col-12 {
+    width: calc(100% * 12 / 12);
+}
+
+.col-nav {
+    width: calc(100% * 2 / 12 - 3%);
+    padding: 0px;
+    border: 0px soild red;
+}
+
+[class^="bg-"] {
+    border: 0px solid #EEEEEE;
+}
+
+/* @media screen and (min-width:500px) */
+
+.bg-1 {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 820px;
+    overflow: hidden;
+    background-image: url("../img/me2.jpeg");
+    background-position: center;
+    padding: 0px;
+    background-origin: content-box;
+}
+
+.bg-2 {
+    background-color: #F6F8F9;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: auto auto;
+    height: 820px;
+}
+
+[class^='text-1'],
+[class^='text-2'] {
+    position: relative;
+    left: 100px;
+}
+
+.text-container {
+    width: 1028px;
+    height: 132px;
+    padding: 0;
+    margin: 347px auto;
+}
+
+[class^='text-'] {
+    font-family: 'Fugaz One', cursive;
+    font-size: 45px;
+}
+
+.text-1 {
+    border: 0px solid red;
+    width: 1028px;
+    height: 70px;
+    text-align: center;
+    font-size: 52px;
+    color: black;
+    padding: 0 100px;
+    font-style: italic;
+}
+
+.text-2 {
+    border: 0px solid red;
+    width: 1028px;
+    height: 50px;
+    text-align: center;
+    color: black(47, 112, 173);
+    font-size: 30px;
+}
+
+.text-3 {
+    border: 0px solid red;
+    float: center;
+    width: 600px;
+    border: 2px solid blue;
+}
+
+#hr_left {
+    border: 0px solid red;
+    margin-left: 50px;
+    width: 150px;
+    float: left;
+    border: 2px solid black;
+}
+
+#hr_right {
+    border: 2px solid black;
+    margin-right: 4px;
+    width: 150px;
+    float: right;
+}
+
+[id^="hr"] {
+    margin-top: 32px;
+    color: black;
+}
+
+nav {
+    border: 0px solid green;
+    background-color: rgba(107, 101, 115, 0.75);
+    height: 50px;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    width: 99.3%;
+}
+
+nav .col-nav h3 {
+    border: 0px solid red;
+    /* border: 2px solid rgba(176, 192, 207, 0.068); */
+    text-align: center;
+    overflow: auto;
+    margin: 7.5%;
+    /* margin-bottom: 0px; */
+}
+
+/* hyper link */
+
+/* aboue me */
+
+[id^="about_me"] {
+    padding: 20px;
+    border: 0px dotted red;
+}
+
+[id^="about_me"] .clear-img-wrapper {
+    border: 5px dashed pink;
+    overflow: auto;
+    width: 80%;
+    margin: 30px auto;
+}
+
+[id^="about_me"] .clear-img-wrapper #right-img {
+    float: right;
+    clear: right;
+    margin-right: 40px;
+    width: 458px;
+    height: 354px;
+    border: 0px solid red;
+    overflow: hidden;
+}
+
+[id^="about_me"] .clear-img-wrapper #right-img img {
+    display: block;
+    border-radius: 25px;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+[id^="about_me"] .clear-img-wrapper #right-img img:hover {
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+[id^="about_me"] .clear-img-wrapper #left-img {
+    float: left;
+    margin-right: 10px;
+    margin-left: 50px;
+    border-radius: 25px;
+    width: 458px;
+    height: 354px;
+}
+
+[id^="about_me"] .clear-img-wrapper #left-img img {
+    display: block;
+    width: 458px;
+    height: 285px;
+    border-radius: 25px;
+}
+
+[id^="about_me"] .clear-img-wrapper {
+    border: 1px dashed pink;
+    overflow: auto;
+}
+
+.fadeInUp [id^="about_me_left"] {
+    float: left;
+    width: 45%;
+    padding: 5px;
+    margin: 70px 30px;
+    border: 0px solid purple;
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(32, 42, 41);
+}
+
+.clear-img-wrapper h4 {
+    /* position: absolute;
+    top: 200px;
+    left: 450px; */
+    border: 0px solid black;
+}
+
+.fadeInUp [id^="about_me_right"] {
+    float: right;
+    width: 50%;
+    margin-top: 50px;
+    margin-right: 30px;
+    border: 1px solid purple;
+}
