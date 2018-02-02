@@ -94,6 +94,7 @@
     background-origin: content-box;
 }
 
+@media screen and (max-width: 1024px){
 .bg-2 {
     background-color: #F6F8F9;
     background-attachment: fixed;
@@ -101,6 +102,7 @@
     padding: auto auto;
     height: 820px;
 }
+}       
 
 [class^='text-1'],
 [class^='text-2'] {
@@ -292,4 +294,5 @@ nav .col-nav h3 {
     font-family: Dancing Script;
     padding: 0px;
     text-align: center;
+    height: auto;
 }

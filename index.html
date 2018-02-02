@@ -12,10 +12,16 @@
 
     <script src="./js/smooth-scroll-master/dist/js/smooth-scroll.min.js"></script>
     <script src="./js/app.js"></script>
+
     <script src="./js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+
+    <script src="./js/slides_show.js">
+    </script>
+
+
 
     <script defer src="./js/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.js"></script>
     <link rel="stylesheet" href="./js/fontawesome-free-5.0.6/svg-with-js/css/font-awesome.min.css">
@@ -64,6 +70,8 @@
             </div>`
         </div>
     </div>
+
+
     <div class="container-fluid">
         <div class="bg-2" id="about_me">
             <!-- <h1 class="animated infinite bounce">Example</h1> -->
@@ -108,32 +116,32 @@
 
         <div class="bg-3" id="education">
             <div class="slide_wrappers">
-                <div class="wrapper">
+                <div class="wrapper fade">
                     <img src="https://picsum.photos/615/?200" alt="">
                     <div class="edu-intro">
                         High School
                     </div>
                 </div>
-                <div class="wrapper">
-                    <img src="#" alt="">
+                <div class="wrapper fade">
+                    <img src="https://picsum.photos/615/?100" alt="">
                     <div class="edu-intro">
                         University
                     </div>
                 </div>
-                <div class="wrapper">
-                    <img src="#" alt="">
+                <div class="wrapper fade">
+                    <img src="https://picsum.photos/615/?300" alt="">
                     <div class="edu-intro">
                         Graduate School
                     </div>
                 </div>
                 <div class="polygon-wrapper">
-                    <div class="polygon">
+                    <div class="polygon" onclick="currentSlide(1)">
 
                     </div>
-                    <div class="polygon">
+                    <div class="polygon" onclick="currentSlide(2)">
 
                     </div>
-                    <div class="polygon">
+                    <div class="polygon" onclick="currentSlide(3)">
 
                     </div>
                 </div>
@@ -142,6 +150,8 @@
         </div>
 
     </div>
+
+    <script>showSlides(1);</script>
 </body>
 
 </html>
