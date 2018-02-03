@@ -16,16 +16,30 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("wrapper");
   var polygons = document.getElementsByClassName("polygon");
 
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+  if (n > slides.length) {
+    slideIndex = 1
   }
-//   for (i = 0; i < dots.length; i++) {
-//     polygons[i].className = polygons[i].className.replace(" active", "");
-//   }
-  slides[slideIndex-1].style.display = "block"; 
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides[i].className = slides[i].className.replace(" animated fadeOutLeft", "");
+  }
+  for (i = 0; i < polygons.length; i++) {
+    polygons[i].className = polygons[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  polygons[slideIndex - 1].className += " active";
 
-  setTimeout(showSlides, 3000, slideIndex=slideIndex+1); // Change image every 2 seconds
-//   dots[slideIndex-1].className += " active";
+  setTimeout(fadeoutleft, 2000, slideIndex);
+  setTimeout(showSlides, 3000, slideIndex = slideIndex + 1); // Change image every 2 seconds
+
+}
+
+function fadeoutleft(n) {
+  var slides = document.getElementsByClassName("wrapper");
+
+  slides[n - 1].className += " animated fadeOutLeft";
+
 }
