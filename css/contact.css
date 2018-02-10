@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Poiret+One');
+.bg-3[id="contact"] {
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 162, 255, 0.25), rgba(251, 255, 0, 0.25));
+    ;
+    height: auto;
+}
+
+[id="contact"] .row {
+    border: 0px solid red;
+    height: auto;
+    padding-bottom: 15%;
+}
+
+[id="contact"] .row>.col-1 {
+    display: block;
+    margin-left: 25px;
+    border: 0px solid red;
+}
+
+[id="contact"] .row>.col-1:first-child {
+    margin-left: calc( 875px / 2);
+}
+
+[id="contact"] [id="facebook"] {
+    font-size: 128px;
+    color: rgb(16, 36, 126);
+}
+
+[id="contact"] [id="github"] {
+    font-size: 128px;
+    color: black;
+}
+
+[id="contact"] [id="linkedin"] {
+    font-size: 128px;
+    color: #3377CC;
+}
+
+[id="contact"] [id="mail"] {
+    font-size: 128px;
+    color: red;
+}
+
+[id="contact"] h3 {
+    display: inline-block;
+    border: 0px dashed red;
+    font-size: 36px;
+    font-family: Poiret One;
+    color: rgb(15, 95, 4);
+}
+
+[id="contact"] hr {
+    display: inline-block;
+    border: 1px solid black;
+    width: 150px;
+}
+
+.bg-3>.col-7 {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: calc( 100% * 5 / 24);
+    border: 0px solid black;
+    display: block;
+}
+
+[id^="contact"] hr:first-child {
+    margin-left: 127px;
+}
+
+.row {
+    width: 100%;
+    border: 0px solid red;
+    margin-top: 12%;
+    text-align: center;
+}
+
+.row i {
+    display: block;
+}

@@ -32,8 +32,8 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   polygons[slideIndex - 1].className += " active";
 
-  setTimeout(fadeoutleft, 2000, slideIndex);
-  setTimeout(showSlides, 3000, slideIndex = slideIndex + 1); // Change image every 2 seconds
+  // setTimeout(fadeoutleft, 2500, slideIndex);
+  //setTimeout(showSlides, 3000, slideIndex = slideIndex + 1); // Change image every 2 seconds
 
 }
 

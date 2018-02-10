@@ -3,12 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/img_slide_show.css">
+    <link rel="stylesheet" href="./css/life.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <link href="./lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+
 
     <script src="./js/smooth-scroll-master/dist/js/smooth-scroll.min.js"></script>
     <script src="./js/app.js"></script>
@@ -32,15 +37,25 @@
 </head>
 
 <body>
+
+    <!-- <!-- <div class="direction">
+        <i class="fas fa-arrow-square-up"></i>
+    </div> -->
+    <div class="direction">
+        <a href="#root">
+            <i class="fas fa-angle-double-up"></i>
+        </a>
+    </div>
+
     <div class="container-fluid">
-        <div class="bg-1">
+        <div class="bg-1" id="root">
 
             <ul>
                 <li>
                     <a href="#about_me">About ME</a>
                 </li>
                 <li>
-                    <a href="#education">Education</a>
+                    <a href="#education">MyWorld</a>
                 </li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Experiences</a>
@@ -51,10 +66,10 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">Awards</a>
+                    <a href="#life">LiFe</a>
                 </li>
                 <li>
-                    <a href="#">Information</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
 
@@ -102,8 +117,9 @@
                     debitis reprehenderit molestiae dolores explicabo inventore dignissimos sapiente neque rerum doloribus
                     laboriosam tempore facere veniam.
                     <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero autem recusandae? Nesciunt,
-                    eos
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima voluptatem expedita vero maiores, provident aut et similique! Iste ea placeat debitis ratione dolores reiciendis repudiandae praesentium nemo nihil libero?
+                    eos Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima voluptatem expedita vero maiores,
+                    provident aut et similique! Iste ea placeat debitis ratione dolores reiciendis repudiandae praesentium
+                    nemo nihil libero?
                 </p>
             </div>
 
@@ -117,22 +133,33 @@
         <div class="bg-3" id="education">
             <div class="slide_wrappers">
                 <div class="wrapper fade">
-                    <img src="https://picsum.photos/615/?200" alt="">
+                    <img src="https://images.unsplash.com/photo-1414115880398-afebc3d95efc?ixlib=rb-0.3.5&s=9e780b1de397c351e262a5c26c9fc0d6&auto=format&fit=crop&w=1050&q=80"
+                        alt="">
                     <div class="edu-intro">
-                        High School
+
                     </div>
                 </div>
                 <div class="wrapper fade">
-                    <img src="https://picsum.photos/615/?100" alt="">
+                    <img src="https://images.unsplash.com/photo-1453106037972-08fbfe790762?ixlib=rb-0.3.5&s=7bed039813c7286ccb23e026ee055c8f&auto=format&fit=crop&w=1489&q=80"
+                        alt="">
                     <div class="edu-intro">
-                        University
+
                     </div>
                 </div>
                 <div class="wrapper fade">
-                    <img src="https://picsum.photos/615/?300" alt="">
-                    <div class="edu-intro">
-                        Graduate School
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1428278953961-a8bc45e05f72?ixlib=rb-0.3.5&s=bc49f58625d8dfb1ed2b1b196a8dbac2&auto=format&fit=crop&w=1050&q=80"
+                        alt="">
+
+                </div>
+                <div class="wrapper fade">
+                    <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?ixlib=rb-0.3.5&s=88bddaa18a84c4673a33ac2c4504aab2&auto=format&fit=crop&w=1050&q=80"
+                        alt="">
+
+                </div>
+                <div class="wrapper fade">
+                    <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-0.3.5&s=631f1d9f23b31c60d5c19914adc9b721&auto=format&fit=crop&w=1033&q=80"
+                        alt="">
+
                 </div>
                 <div class="polygon-wrapper">
                     <div class="polygon" onclick="currentSlide(1)">
@@ -144,14 +171,190 @@
                     <div class="polygon" onclick="currentSlide(3)">
 
                     </div>
+                    <div class="polygon" onclick="currentSlide(4)">
+
+                    </div>
+                    <div class="polygon" onclick="currentSlide(5)">
+
+                    </div>
                 </div>
-                
+
             </div>
         </div>
 
     </div>
 
-    <script>showSlides(1);</script>
+    <div class="container-fluid">
+        <div class="bg-2" id="life">
+            <div class="col-7">
+                <hr id="life_hr_left">
+                <h5>Art means the world to me</h5>
+                <hr id="life_hr_right">
+            </div>
+            <div class="col-12">
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/21/rail.JPG?ixlib=rb-0.3.5&s=1a41ffd105fa1914aba100cf008c0458&auto=format&fit=crop&w=1050&q=80"
+                        data-lightbox="image-1">
+                        <img src="https://images.unsplash.com/21/rail.JPG?ixlib=rb-0.3.5&s=1a41ffd105fa1914aba100cf008c0458&auto=format&fit=crop&w=1050&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/photo-1458236987605-990022dbce63?ixlib=rb-0.3.5&s=2861a43390eb22e6aee5a0701c562cba&auto=format&fit=crop&w=1051&q=80"
+                        data-lightbox="image-2">
+                        <img src="https://images.unsplash.com/photo-1458236987605-990022dbce63?ixlib=rb-0.3.5&s=2861a43390eb22e6aee5a0701c562cba&auto=format&fit=crop&w=1051&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/12/sun-trees.jpg?ixlib=rb-0.3.5&s=440e96e058412fc812d8e12b4acf71e8&auto=format&fit=crop&w=1497&q=80"
+                        data-lightbox="image-3">
+                        <img src="https://images.unsplash.com/12/sun-trees.jpg?ixlib=rb-0.3.5&s=440e96e058412fc812d8e12b4acf71e8&auto=format&fit=crop&w=1497&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/12/palm-trees.JPG?ixlib=rb-0.3.5&s=1e8e0f2d8e20dcf2d3f5b252d55f4b18&auto=format&fit=crop&w=1051&q=80"
+                        data-lightbox="image-4">
+                        <img src="https://images.unsplash.com/12/palm-trees.JPG?ixlib=rb-0.3.5&s=1e8e0f2d8e20dcf2d3f5b252d55f4b18&auto=format&fit=crop&w=1051&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/9/johnny-lam-connect.jpg?ixlib=rb-0.3.5&s=fded3ce90dae9cbe2a64ada365593ca6&auto=format&fit=crop&w=1055&q=80"
+                        data-lightbox="image-5">
+                        <img src="https://images.unsplash.com/9/johnny-lam-connect.jpg?ixlib=rb-0.3.5&s=fded3ce90dae9cbe2a64ada365593ca6&auto=format&fit=crop&w=1055&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/12/sun-trees.jpg?ixlib=rb-0.3.5&s=440e96e058412fc812d8e12b4acf71e8&auto=format&fit=crop&w=1497&q=80"
+                        data-lightbox="image-6">
+                        <img src="https://images.unsplash.com/12/sun-trees.jpg?ixlib=rb-0.3.5&s=440e96e058412fc812d8e12b4acf71e8&auto=format&fit=crop&w=1497&q=80"
+                            alt="">
+                    </a>
+                </div>
+
+
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/photo-1464600923926-4ff72f9505f3?ixlib=rb-0.3.5&s=02b6612e5141950ad84b458b013e890e&auto=format&fit=crop&w=1050&q=80"
+                        data-lightbox="image-7">
+                        <img src="https://images.unsplash.com/photo-1464600923926-4ff72f9505f3?ixlib=rb-0.3.5&s=02b6612e5141950ad84b458b013e890e&auto=format&fit=crop&w=1050&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/5/unsplash-kitsune-3.jpg?ixlib=rb-0.3.5&s=f1e6a8f83c1fa922db6d9d427ede91b3&auto=format&fit=crop&w=1050&q=80"
+                        data-lightbox="image-8">
+                        <img src="https://images.unsplash.com/5/unsplash-kitsune-3.jpg?ixlib=rb-0.3.5&s=f1e6a8f83c1fa922db6d9d427ede91b3&auto=format&fit=crop&w=1050&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/5/car.jpg?ixlib=rb-0.3.5&s=bdc8b941cc0496a323e75cc7a434ffe0&auto=format&fit=crop&w=1492&q=80"
+                        data-lightbox="image-9">
+                        <img src="https://images.unsplash.com/5/car.jpg?ixlib=rb-0.3.5&s=bdc8b941cc0496a323e75cc7a434ffe0&auto=format&fit=crop&w=1492&q=80"
+                            alt="">
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/5/rain.jpg?ixlib=rb-0.3.5&s=b09744480f38cc2213fdf27544d8962d&auto=format&fit=crop&w=1096&q=80"
+                        data-lightbox="image-10">
+                        <img src="https://images.unsplash.com/5/rain.jpg?ixlib=rb-0.3.5&s=b09744480f38cc2213fdf27544d8962d&auto=format&fit=crop&w=1096&q=80"
+                            alt="">
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/7/Top_view.jpg?ixlib=rb-0.3.5&s=f9cf296cd8f5054d1b563ce7e9d5531d&auto=format&fit=crop&w=1100&q=80"
+                        data-lightbox="image-11">
+
+                        <img src="https://images.unsplash.com/7/Top_view.jpg?ixlib=rb-0.3.5&s=f9cf296cd8f5054d1b563ce7e9d5531d&auto=format&fit=crop&w=1100&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/7/tracks.jpg?ixlib=rb-0.3.5&s=cc10b9375033295a79c64ea21754ba0f&auto=format&fit=crop&w=1053&q=80"
+                        data-lightbox="image-12">
+
+                        <img src="https://images.unsplash.com/7/tracks.jpg?ixlib=rb-0.3.5&s=cc10b9375033295a79c64ea21754ba0f&auto=format&fit=crop&w=1053&q=80"
+                            alt="">
+                    </a>
+                </div>
+
+                <div class="col-3">
+                    <img src="#" alt="">
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/6/overhead-hi-res.jpg?ixlib=rb-0.3.5&s=c5df3f44b8ad3ef1fda82e0eda3ca047&auto=format&fit=crop&w=800&q=80"
+                        data-lightbox="image-13">
+                        <img src="https://images.unsplash.com/6/overhead-hi-res.jpg?ixlib=rb-0.3.5&s=c5df3f44b8ad3ef1fda82e0eda3ca047&auto=format&fit=crop&w=800&q=80"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/6/blurred_lines.jpeg?ixlib=rb-0.3.5&s=8689bb01451cb12893298553b7128635&auto=format&fit=crop&w=1050&q=80"
+                        data-lightbox="image-14">
+                        <img src="https://images.unsplash.com/6/blurred_lines.jpeg?ixlib=rb-0.3.5&s=8689bb01451cb12893298553b7128635&auto=format&fit=crop&w=1050&q=80"
+                            alt="">
+                    </a>
+
+                </div>
+                <div class="col-2">
+                    <a href="https://images.unsplash.com/8/green-bike.jpg?ixlib=rb-0.3.5&s=eb39751e2bf2f8b18987b6da25679827&auto=format&fit=crop&w=1053&q=80"
+                        data-lightbox="image-15">
+                        <img src="https://images.unsplash.com/8/green-bike.jpg?ixlib=rb-0.3.5&s=eb39751e2bf2f8b18987b6da25679827&auto=format&fit=crop&w=1053&q=80"
+                            alt="">
+                    </a>
+
+                </div>
+                <div class="col-3">
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="bg-3" id="contact">
+            <div class="col-7">
+                <hr>
+                <h3>Let us get in touch </h3>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <i class="fab fa-facebook" id="facebook"></i>
+                </div>
+                <div class="col-1">
+                    <i class="fab fa-github" id="github"></i>
+                </div>
+                <div class="col-1">
+                    <i class="fab fa-linkedin" id="linkedin"></i>
+                </div>
+                <div class="col-1">
+                    <i class="far fa-envelope" id="mail"></i>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        currentSlide(3);
+    </script>
+
+    <script src="./lightbox2-master/src/js/lightbox.js"></script>
+    <script src="./lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>

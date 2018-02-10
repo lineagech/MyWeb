@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Poiret+One');
+[id="life"] {
+    background-color: #EEEEEE;
+}
+
+[id^="life"] h5 {
+    display: inline-block;
+    border: 0px dashed red;
+    font-size: 36px;
+    font-family: Poiret One;
+    color: #4000ff;
+    font-weight: bold;
+}
+
+[id^="life"] hr {
+    display: inline-block;
+    border: 1px solid black;
+    width: 150px;
+}
+
+[id^="life"] hr:first-child {
+    margin-left: 53px;
+}
+
+[id="life"] {
+    height: 100%;
+}
+
+.bg-2>.col-7 {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: calc( 100% * 5 / 24);
+    border: px solid black;
+}
+
+.bg-2.col-2 {
+    display: inline-block;
+    border: 5px solid black;
+}
+
+.bg-2>.col-12 {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bg-2>.col-12>.col-2 img {
+    width: 100%;
+    height: 180px;
+    filter: grayscale(100%);
+    display: block;
+}
+
+.bg-2>.col-12>.col-2 img:hover {
+    width: 100%;
+    filter: grayscale(0%);
+}
